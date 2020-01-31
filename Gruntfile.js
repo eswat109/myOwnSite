@@ -44,7 +44,7 @@ grunt.initConfig({
 
         build: {
             src: 'public/js/form.js', // какой файл минифицировать
-            dest: 'build/build.min.js' // куда класть файл, который получиться после процесса минификации
+            dest: 'public/build/build.min.js' // куда класть файл, который получиться после процесса минификации
         }
     },
 
@@ -55,7 +55,7 @@ grunt.initConfig({
             },
 
             files: {
-                'build/style.min.css' : ['public/css/main.css', 'public/css/form.css', 'public/css/carousel.css'] // первая строка - output файл. массив из строк, какие файлы конкатенировать и минифицировать.
+                'public/build/style.min.css' : ['public/css/main.css', 'public/css/form.css', 'public/css/carousel.css'] // первая строка - output файл. массив из строк, какие файлы конкатенировать и минифицировать.
             }
         }
     },
@@ -73,8 +73,8 @@ grunt.initConfig({
 
     removelogging: { //описываем работу плагина удаления логов
         dist: {
-            src: "build/build.min.js", // файл который надо отчистить от console.log
-            dest: "build/build.clean.js" // выходной файл, который получим после очистки
+            src: "public/build/build.min.js", // файл который надо отчистить от console.log
+            dest: "public/build/build.clean.js" // выходной файл, который получим после очистки
         }
     }
 
