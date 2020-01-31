@@ -7,11 +7,19 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-remove-logging": "latest",
     "jquery": "^3.4.1",
     "nodemailer": "^6.4.2",
     "sendmail": "^1.6.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

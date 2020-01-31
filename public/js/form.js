@@ -1,4 +1,4 @@
-$('#formBtn').click(() => {
+$('#formBtn').click(function(){
     //console.log('sas');
     /*
     $('#myForm').find ('input').each(function() {
@@ -23,7 +23,7 @@ $('#formBtn').click(() => {
             //var footer = $("");
             $('body').append(data);
         }
-    })
+    });
     //console.log(data);
 });
 

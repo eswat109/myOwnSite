@@ -5,29 +5,10 @@
     <title>Order now!</title>
     <meta charset="UTF-8">
     <%- include('blocks/bootstrap.ejs'); -%>
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
 <%- include('blocks/navbar.ejs'); -%>
-<!--
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 jumbotron">
-            <form action="/order" method="post">
-                <div class="form-group" id="orderForm">
-                    <p>Enter your name and email for order Codeform</p>
-                    <p>
-                        <label>First name:</label><br>
-                        <input type="text" name="firstName"> <br>
-                        <label>Last name:</label><br>
-                        <input type="text" name="lastName"> <br>
-                        <label>Email:</label><br>
-                        <input type="text" name="email"> <br>
-                        <input type="submit" name="submit"></p>
-                </div>
-            </form>
-        </div>
-    </div>
-    -->
     <div class="row">
         <div class="col-xs-12 jumbotron" id="form">
             <form id="orderForm">
@@ -49,7 +30,7 @@
                     <button type="button" class="btn btn-primary" id="formBtn"> Submit</button>
                 </div>
             </form>
-            <script src="form.js"></script>
+            <script src="js/form.js"></script>
         </div>
     </div>
     <div class="results">
