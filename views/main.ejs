@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codeform</title>
+    <%- include('blocks/bootstrap.ejs'); -%>
+</head>
+<body>
+    <%- include('blocks/navbar.ejs'); -%>
+    <div class="padding">
+        <div class="carousel slide" data-ride="carousel" id="slides">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/vr/slide_1.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/vr/slide_2.jpeg">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/vr/slide_3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row jumbotron padding">
+            <div class="col-lg-4">
+                <h2>Prepare to new entertaiment</h2>
+                <p>With the entry into the age of new technologies, mankind began to think about transferring its consciousness to a new cyber plane. It must be a world free from want. A world in which everyone can do whatever they want, to realize their potential. A world in which all people can be free.
+                    <br>And today, MagnaCorp is ready to give you a chance to touch this world. Ladies and gentlemen, we present you Codeform ..<br></p>
+                <a href="/order"><button class="btn btn-dark btn-lg" type="button">Get your own CodeForm right now!</button></a>
+            </div>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="/img/vr/vr.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

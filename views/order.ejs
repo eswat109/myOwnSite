@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order now!</title>
+    <meta charset="UTF-8">
+    <%- include('blocks/bootstrap.ejs'); -%>
+</head>
+<body>
+<%- include('blocks/navbar.ejs'); -%>
+<!--
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 jumbotron">
+            <form action="/order" method="post">
+                <div class="form-group" id="orderForm">
+                    <p>Enter your name and email for order Codeform</p>
+                    <p>
+                        <label>First name:</label><br>
+                        <input type="text" name="firstName"> <br>
+                        <label>Last name:</label><br>
+                        <input type="text" name="lastName"> <br>
+                        <label>Email:</label><br>
+                        <input type="text" name="email"> <br>
+                        <input type="submit" name="submit"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    -->
+    <div class="row">
+        <div class="col-xs-12 jumbotron" id="form">
+            <form id="orderForm">
+                <div class="form-group ">
+                    <h2>Get your own Codeform today!</h2>
+                    <h3>Enter your name and email for order</h3>
+                    <div class="form-group">
+                        <label for = "firstNameInpt">First Name</label>
+                        <input type="text" class="form-control" name="firstName" id="firstNameInpt" placeholder="Your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for = "lastNameInpt">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" id="lastNameInpt" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for = "firstNameInpt">Email</label>
+                        <input type="email" class="form-control" name="email" id="emailInpt" placeholder="example@email.com">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="formBtn"> Submit</button>
+                </div>
+            </form>
+            <script src="form.js"></script>
+        </div>
+    </div>
+    <div class="results">
+
+    </div>
+</div>
+</body>
+</html>
